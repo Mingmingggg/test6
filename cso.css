@@ -1,0 +1,756 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font/hg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #346543;
+    padding: 0;
+    border: 1vw solid #e8ab3a; 
+    margin: 0;
+    font-family: 'CustomFont', sans-serif;
+    position: relative; 
+}
+
+@media (max-width: 768px) {
+    body {
+        border: 2vw solid #e8ab3a; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        border: 3vw solid #e8ab3a; 
+    }
+}
+
+.main-text {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    .main-text {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-text {
+        font-size: 4vw; 
+    }
+}
+
+@media (max-width: 320px) {
+    .main-text {
+        font-size: 5vw; 
+    }
+}
+
+
+.description-text {
+    font-family: 'CustomFont', sans-serif;
+}
+
+h2 {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 32px; /* You can adjust the size */
+    font-weight: bold; /* Optional */
+}
+
+p {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 16px; /* You can adjust the size */
+    line-height: 1.5; /* Optional, improves readability */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    color: #B53C28;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #B53C28;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    justify-items: center;
+    margin-top: 0px;
+    padding-left: 220px;
+    padding-right: 200px;
+}
+
+.nav-btn {
+    background-color: #e5881d;
+    color: white;
+    border: none;
+    width: 700px;
+    height: 130px; /* Adjust height for content */
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.button-content {
+    display: flex;
+    align-items: center; /* Aligns logo and text vertically */
+}
+
+.logo {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center vertically */
+}
+
+.description-text {
+    font-size: 14px; /* Smaller font for description */
+    color: rgba(255, 255, 255, 0.8); /* Lighter color for contrast */
+    margin-top: 5px; /* Space between main text and description */
+}
+
+.nav-btn:hover {
+    background-color: #B38345;
+    transform: scale(1.05);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 900px) {
+    .nav-btn {
+        height: auto; /* Keep height auto for flexibility */
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 40px; /* Smaller logo on mobile */
+    }
+
+    .nav-btn {
+        height: auto; /* Keep height auto for flexibility */
+    }
+}
+
+
+/* Background Layer */
+.background-layer {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#346543;
+    padding: 20px;
+}
+
+/* Section 2 Styling */
+#section2 {
+    background-image: url('images/home/section2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    padding: 0;
+    border: none;
+}
+
+/* Page Styling */
+.page {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5E5C4;
+    padding: 20px;
+}
+
+/* Typography */
+h2 {
+    color: #B53C28;
+    font-size: 36px;
+}
+
+p {
+    color: #4A4A4A;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Arrow Logo Styling */
+.arw-logo {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+/* Carousel Styling */
+.image-section {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding around the section */
+}
+
+.background-layer {
+    flex: 1; /* Allow background layer to grow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.text-content {
+    flex: 1; 
+    padding: 0 20px; 
+}
+
+
+.sponsors {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 200px; 
+    box-sizing: border-box; 
+    padding: 0px; 
+}
+
+@media (max-width: 768px) {
+    .sponsors {
+        max-width: 90%; 
+        margin: 20px auto; 
+        padding: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .carousel-image {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .arw-logo {
+        width: 100%;
+        max-height: 300px;
+    }
+}
+
+/***********BIRD************/
+.bird-img {
+    position: absolute; 
+    top: 2020px; 
+    left: 1155px; 
+    width: 500px;
+    height: auto; 
+    margin: 0 auto;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+
+.bird {
+    width: 400px;
+    height: auto; 
+    display: block; 
+}
+
+.bird-img2 {
+    position: absolute; 
+    top: 550px; 
+    left: -75px; 
+    width: 300px;
+    height: 400px; 
+    margin: 0 auto;
+    overflow: hidden; 
+    z-index: 1; 
+}
+
+.bird2 {
+    width: 400px;
+    height: auto; 
+    display: block; 
+}
+
+.bird-img3 {
+    position: absolute;
+    top: 60px;
+    left: 0; /* Left is now 0 to prevent layout expansion */
+    transform: translateX(1150px); /* Move the element 150px to the right */
+    max-width: 100%; /* Ensure the image doesn't overflow the body */
+    width: 1000px; 
+    height: auto;
+    margin: 0; /* No auto centering */
+    overflow: hidden; 
+    z-index: -1;
+    pointer-events: none; /* Optional, prevents interaction issues */
+}
+
+
+.bird3 {
+    width: 400px;
+    height: auto; 
+    display: block; 
+}
+
+/***********ARROW********************************/
+.arrow-img {
+    position: absolute; 
+    top: 430px; 
+    left: 125px; 
+    width: 1180px;
+    height: auto; 
+    margin: 0 auto;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+
+.arrow {
+    width: 1180px;
+    height: auto; 
+    display: block; 
+}
+
+.bird-img, .bird-img2, .bird-img3, .arrow-img {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .bird-img, .bird-img2, .bird-img3, .arrow-img {
+        display: none; 
+    }
+}
+
+
+
+
+/*******************************VIDEO*********************************/
+.video-container {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden; 
+}
+
+.org-vid1 {
+    padding-top: 10px;
+    width: 100%; 
+    max-width: 700px; 
+    height: 510px; 
+    object-fit: cover; 
+}
+
+
+@media only screen and (max-width: 768px) {
+    .org-vid1 {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+
+
+.logo {
+    width: 11vw;    
+    height: 9vw;  
+    position: relative;
+    left: 2vw;    
+}
+
+.main-text {
+    font-size: 4vw; 
+    position: relative;
+    bottom: 0.5vw;  
+    left: 1vw;      
+}
+
+.tagline {
+    font-size: 1vw; 
+    margin-top: 1vw; 
+    position: relative;
+    left: 2vw;     
+    font-family: 'CustomFont', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 20vw;
+        height: 18vw;
+        left: 3vw;
+    }
+
+    .main-text {
+        font-size: 6vw;
+        bottom: 1vw;
+        left: 2vw;
+    }
+
+    .tagline {
+        font-size: 2.5vw;
+        left: 3vw;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        width: 25vw;
+        height: 22vw;
+        left: 5vw;
+    }
+
+    .main-text {
+        font-size: 7vw;
+        bottom: 2vw;
+        left: 3vw;
+    }
+
+    .tagline {
+        font-size: 3vw;
+        left: 5vw;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .logo {
+        width: 30vw;
+        height: 28vw;
+        left: 5vw;
+    }
+
+    .main-text {
+        font-size: 8vw;
+        bottom: 2.5vw;
+        left: 4vw;
+    }
+
+    .tagline {
+        font-size: 3.5vw;
+        left: 6vw;
+    }
+}
+
+
+.text-content h2 {
+    font-size: 76px;   
+
+    color: #ffb660;    
+    margin-bottom: 20px;  
+    text-align: center; 
+    font-family: 'CustomFont', sans-serif;  
+}
+
+.text-content p {
+    font-size: 18px;  
+    color: #ffffff;  
+    line-height: 1.6;  
+    text-align: justify; 
+    margin-top: 15px;  
+    margin-left: 45px; 
+    margin-right: 30px; 
+    font-family: 'CustomFont', sans-serif;  
+}
+
+
+
+/*******************************MISSION-VISION*********************************/
+.mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: -10px; 
+}
+
+.MissionVission {
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+}
+
+.MissionVission h2 {
+    color: #ffb660;
+    font-size: 8vw; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.MissionVission p {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 4vw; 
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+    .mission-vision-container {
+        flex-direction: row; 
+        margin-bottom: 350px; 
+    }
+
+    .MissionVission {
+        width: 45%; 
+        margin-bottom: 0; 
+    }
+
+    .MissionVission h2 {
+        font-size: 76px; 
+    }
+
+    .MissionVission p {
+        font-size: 16px; 
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/*******************************ORG-IMG*********************************/
+.side-image {
+    width: 600px; 
+    height: 500px; 
+    margin-left: 60px;
+    margin-right: 20px; 
+    margin-bottom: 35px; 
+    object-fit: cover; 
+}
+
+.background-layer {
+    position: relative; 
+    overflow: hidden; 
+}
+
+.content-container {
+    display: flex; 
+    align-items: flex-start; 
+    max-width: 100%; 
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    flex: 1; 
+    max-width: 600px; 
+    box-sizing: border-box; 
+}
+
+.text-content h2 {
+    font-size: 70px;   
+    color: #ffb660;    
+    margin-bottom: 20px;  
+    text-align: center; 
+    font-family: 'CustomFont', sans-serif;  
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    flex: 1; 
+    max-width: 3000px; 
+    box-sizing: border-box; 
+}
+
+.text-content p {
+    font-size: 20px;  
+    color: #ffffff;  
+    line-height: 1.6;  
+    text-align: justify; 
+    margin-top: 15px;  
+    padding-left: 5px; 
+    padding-right: 5px; 
+}
+
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .side-image {
+        margin: 0 0 20px 0; 
+        width: 40%; 
+        height: auto; 
+    }
+
+    .text-content {
+        align-items: center; 
+        margin-left: 0; 
+        margin-right: 0; 
+        padding: 0 1px; 
+        max-width: none; 
+    }
+
+    .text-content h2 {
+        font-size: 36px; 
+    }
+
+    .text-content p {
+        font-size: 16px; 
+    }
+}
+
+
+
+
+
+/*******************************BELOW BUTTON*********************************/
+footer {
+    position: relative; /* Ensure footer has a positioning context */
+    background-color: #346543; /* Background color for the footer */
+    padding: 20px; /* Add padding to footer */
+    text-align: center; /* Center text in the footer */
+}
+
+.button-container {
+    position: absolute; /* Position relative to the footer */
+    bottom: 10px;      /* Distance from the bottom of the footer */
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.btn {
+    background-color: #e5881d; 
+    color: white; 
+    border: none;
+    padding: 1vw 2vw; /* Responsive padding using viewport width */
+    margin: 1vw;      /* Responsive margin */
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 2vw;   /* Responsive font size */
+    font-family: 'CustomFont', sans-serif;
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #ffb660; 
+}
+
+/* For tablets and medium devices */
+@media (max-width: 768px) {
+    .btn {
+        padding: 1.5vw 2.5vw; /* Adjusted responsive padding */
+        font-size: 2.5vw;     /* Adjusted responsive font size */
+        margin-top: 40px;     /* Margin using px for spacing */
+    }
+
+    .button-container {
+        bottom: 40px;  /* Adjust the bottom position for medium screens */
+    }
+}
+
+/* For small devices like phones */
+@media (max-width: 480px) {
+    .btn {
+        padding: 1vw 2vw;     /* Further adjusted responsive padding */
+        font-size: 3vw;       /* Larger responsive font size for readability */
+        margin-top: 15px;     /* Adjusted margin for smaller screens */
+    }
+
+    .button-container {
+        bottom: 40px;  /* Adjust the bottom position for small screens */
+    }
+}
+
+/* For very small devices */
+@media (max-width: 320px) {
+    .btn {
+        padding: 0.8vw 1.5vw; /* Smaller padding for very small screens */
+        font-size: 4vw;       /* Further increased font size for clarity */
+        margin-top: 20px;     /* Smaller margin for very small screens */
+    }
+}

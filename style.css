@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font/hg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0eddb;
+    padding: 0;
+    margin: 0;
+    font-family: 'CustomFont', sans-serif;
+    border: 20px solid #e5881d;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        border: 10px solid #e5881d; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        border: 5px solid #e5881d; 
+    }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    color: #B53C28;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #B53C28;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    justify-items: center;
+    margin-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+
+/* Navigation Button */
+.nav-btn {
+    font-family: 'CustomFont', sans-serif;
+    background-color: #e5881d;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    background-color: #B38345;
+    transform: scale(1.05);
+}
+
+/* Background Layer */
+.background-layer {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eddb;
+    padding: 20px;
+}
+
+/* Section 2 Styling */
+#section2 {
+    background-image: url('images/home/section2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    padding: 0;
+    border: none;
+}
+
+/* Page Styling */
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5E5C4;
+    padding: 20px;
+}
+
+/* Typography */
+h2 {
+    color: #B53C28;
+    font-size: 36px;
+}
+
+p {
+    color: #4A4A4A;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Arrow Logo Styling */
+.arw-logo {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+}
+
+.carousel-image {
+    width: 120%;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+    padding: 20px 0;
+    margin-left: -10%;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 10;
+}
+
+.carousel-button.left {
+    left: 0px;
+}
+
+.carousel-button.right {
+    right: 0px;
+}
+
+/* Sponsors Styling */
+.sponsors {
+    width: 400px;
+    height: auto;
+    padding-bottom: 500px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .carousel-image {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .arw-logo {
+        width: 100%;
+        max-height: 300px;
+    }
+}
+
+/***********BIRD************/
+.bird-img {
+    position: absolute; 
+    top: 620px; 
+    left: 0; 
+    width: 100%;
+    height: auto; 
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+
+.bird {
+    width: 300px;
+    height: auto; 
+    display: block; 
+}
+
+
+
+/*******************************Organizations*********************************/
+/***********CSO***************/
+.video-container {
+    position: relative; /* Needed for absolute positioning */
+    width: 100%; /* Full width of the container */
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+    height: auto; /* Set a specific height */
+    overflow: hidden; /* Optional: Prevent overflow */
+}
+
+.org-vid1 {
+    padding-top: 60px;
+    width: 700px; /* Maintain a maximum width */
+    height: 500px; /* Allow height to adjust automatically */
+    /* Optional: To maintain aspect ratio */
+
+    object-fit: cover; /* Cover the container without distorting the aspect ratio */
+}
+
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e8ab3a;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+#loading-screen img {
+    width: 10vw; 
+    max-width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #loading-screen img {
+        width: 20vw;
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    #loading-screen img {
+        width: 30vw;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 320px) {
+    #loading-screen img {
+        width: 40vw;
+        max-width: 80px;
+    }
+}
